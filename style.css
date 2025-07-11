@@ -21,4 +21,36 @@
         padding: 40px 0;
       }
 
-      
+    /* navigation bar */
+    
+    .navbar {
+        background-image: url('Assets/Hero-bg.png');
+        background-size: cover;
+        background-position: center;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+    position: center;
+    width: 100%;
+    top: 0;
+
+    }
+
+    .navbar .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+
+    .logo {
+        font-size: 50px;
+        font-weight: 1000;
+        color:rgba(75, 75, 211) ;
+        
+    }
+
+    
