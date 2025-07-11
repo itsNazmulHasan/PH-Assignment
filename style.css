@@ -93,8 +93,10 @@
 
 .banner h1 {
     color: black;
-    font-size: 2.8rem;
-    margin-bottom: 30px;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 1000;
+    margin-bottom: 50px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -115,7 +117,9 @@
 }
 
 .action-content h2 {
-    font-size: 2rem;
+    font-size: 4rem;
+    font-weight: 1000;
+    margin-top: 20px;
     margin-bottom: 20px;
     color: #333;
 }
@@ -146,7 +150,10 @@
 }
 
 .productive-users h2 {
-    font-size: 2rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    font-weight: 1000;
     margin-bottom: 50px;
     color: #333;
 }
