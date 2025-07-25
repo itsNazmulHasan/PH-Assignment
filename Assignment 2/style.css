@@ -325,3 +325,131 @@
         color: var(--primary);
         font-weight: bold;
       }
+
+
+           /* NEW DEALS SECTION STYLES */
+      .deals-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        height: 500px; /* Fixed height for the grid */
+      }
+
+      .left-grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        height: 100%;
+      }
+
+      .deal-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        height: 100%;
+      }
+
+      .deal-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .deal-card:hover img {
+        transform: scale(1.05);
+      }
+
+      .deal-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .deal-content .deal-badge {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .deal-content .btn {
+        margin-top: 10px;
+      }
+
+          /* Sales/Deals section */
+
+
+      .deals-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 20px;
+        height: 500px;
+      }
+
+      
+
+      .left-grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        height: 100%;
+      }
+
+      .deal-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: var(--shadow);
+        height: 100%;
+      }
+
+      .deal-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .deal-card:hover img {
+        transform: scale(1.05);
+      }
+
+      .deal-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .deal-content .deal-badge {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .deal-content .btn {
+        margin-top: 10px;
+      }
+
