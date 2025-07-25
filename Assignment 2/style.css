@@ -577,7 +577,7 @@
       }
 
 
-            /* Alert Section for Cart*/
+            /* Alert Section for cart*/
       .alert {
         position: fixed;
         top: 100px;
@@ -594,6 +594,94 @@
 
       .alert.show {
         transform: translateX(0);
+
+
+
       }
+
+
+        /* Responsive Section for Bigger Devices */
+
+        @media (max-width: 992px) 
+        {
+        .plants-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .banner-content h1 {
+          font-size: 2.8rem;
+        }
+      }
+
+
+
+        @media (max-width: 768px) 
+        {
+            .plants-grid {
+            grid-template-columns: repeat(2, 1fr);
+            }
+    
+            .banner-content h1 {
+            font-size: 2.5rem;
+            }
+    
+            .navbar .nav-menu {
+            display: none;
+            }
+    
+            .mobile-cart {
+            display: block;
+            }
+    
+            .lover-content {
+            padding-left: 20px;
+            }
+        }
+
+
+              /* Responsive Section for Smaller Devices */
+      @media (max-width: 576px) {
+        .plants-grid {
+          grid-template-columns: repeat(2, 1fr); 
+          gap: 15px; 
+        }
+        
+        .plant-card {
+          height: auto; 
+        }
+        
+        .plant-img {
+          height: 250px; 
+        }
+
+        .footer-grid {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .footer-links h3:after {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .subscribe-form {
+          flex-direction: column;
+        }
+
+        .subscribe-form input {
+          border-radius: 30px;
+          margin-bottom: 15px;
+        }
+
+        .subscribe-form button {
+          border-radius: 30px;
+        }
+
+        /* new deals */
+        .left-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
 
 
