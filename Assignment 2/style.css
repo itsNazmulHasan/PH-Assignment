@@ -1,5 +1,6 @@
 /*common for all*/
 
+  
       * {
         margin: 0;
         padding: 0;
@@ -92,9 +93,8 @@
         max-width: 600px;
         margin: 0 auto;
       }
-
       /* Logo and navigationbar section */
-      .navbar {
+       .navbar {
         background-color: var(--white);
         box-shadow: var(--shadow);
         position: fixed;
@@ -169,9 +169,8 @@
       .mobile-cart {
         display: none;
       }
-
       /* Banner Ssection */
-      .banner {
+        .banner {
         padding: 150px 0 80px;
         margin-top: 80px;
       }
@@ -216,8 +215,6 @@
         object-fit: cover;
         border-radius: 10px;
       }
-
-
 
 
        /* Main content section */
@@ -268,9 +265,8 @@
         margin-bottom: 15px;
       }
 
-
             /* Plant Lover section */
-      .plants-lover {
+         .plants-lover {
         background: var(--light);
         padding: 80px 0;
         margin-top: 50px;
@@ -326,9 +322,8 @@
         font-weight: bold;
       }
 
-
            /* NEW DEALS SECTION STYLES */
-      .deals-grid {
+        .deals-grid {
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 20px;
@@ -398,8 +393,6 @@
         height: 500px;
       }
 
-
-
       .left-grid {
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -453,9 +446,8 @@
         margin-top: 10px;
       }
 
-
        /* Join Section */
-      .join {
+     .join {
         background: url('assets/news-letter-bg.png') no-repeat center center/cover;
         color: var(--white);
         text-align: center;
@@ -508,77 +500,86 @@
         /* Footer Section */
 
              
-      .footer {
-        background: linear-gradient(to left, #000000, #06429b);
-        color: var(--white);
-        padding: 60px 0 30px;
+         .footer {
+        background-color: #f9fafb;
+        color: #374151;
+        padding: 40px 20px;
+        font-family: sans-serif;
       }
 
-      .footer-grid {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr;
+      .footer-container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         gap: 40px;
       }
 
+      .footer-left {
+        flex: 1 1 300px;
+      }
+
       .footer-logo {
-        margin-bottom: 20px;
-        font-size: 2rem;
-        font-weight: 700;
-        color: var(--white);
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
       }
 
-      .footer-text {
-        opacity: 0.8;
-        margin-bottom: 25px;
+      .logo-img {
+        height: 40px;
+        margin-right: 10px;
       }
 
-      .footer-links h3 {
-        font-size: 1.3rem;
-        margin-bottom: 20px;
-        position: relative;
-        padding-bottom: 10px;
+      .footer-logo-text {
+        font-size: 20px;
+        color: #ea580c; /* orange-600 */
+        font-weight: bold;
       }
 
-      .footer-links h3:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 50px;
-        height: 3px;
-        background: var(--secondary);
+      .footer-description {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .footer-links {
+        flex: 1 1 150px;
       }
 
       .footer-links ul {
         list-style: none;
+        padding: 0;
       }
 
-      .footer-links li {
-        margin-bottom: 10px;
+      .footer-links ul li {
+        margin-bottom: 8px;
       }
 
-      .footer-links a {
-        color: rgba(255, 255, 255, 0.8);
+      .footer-links ul li a {
         text-decoration: none;
-        transition: var(--transition);
+        color: #374151;
+        font-size: 14px;
       }
 
-      .footer-links a:hover {
-        color: var(--specialorange);
-        padding-left: 5px;
+      .footer-links ul li a:hover {
+        text-decoration: underline;
       }
 
-      .footer-bottom {
-        text-align: center;
-        padding-top: 30px;
-        margin-top: 30px;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        opacity: 0.7;
+      .footer-social {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .footer-social img {
+        width: 24px;
+        height: 24px;
       }
 
 
             /* Alert Section for cart*/
-      .alert {
+       .alert {
         position: fixed;
         top: 100px;
         right: 30px;
@@ -594,16 +595,13 @@
 
       .alert.show {
         transform: translateX(0);
-
-
-
       }
 
 
-        /* Responsive Section for Bigger Devices */
 
-        @media (max-width: 992px) 
-        {
+       /* Responsive design */
+
+    @media (max-width: 992px) {
         .plants-grid {
           grid-template-columns: repeat(3, 1fr);
         }
@@ -613,55 +611,99 @@
         }
       }
 
-
-
-        @media (max-width: 768px) 
-        {
-            .plants-grid {
-            grid-template-columns: repeat(2, 1fr);
-            }
-    
-            .banner-content h1 {
-            font-size: 2.5rem;
-            }
-    
-            .navbar .nav-menu {
-            display: none;
-            }
-    
-            .mobile-cart {
-            display: block;
-            }
-    
-            .lover-content {
-            padding-left: 20px;
-            }
+      @media (max-width: 768px) {
+        .logo-text {
+          font-size: 1.8rem;
         }
 
-
-              /* Responsive Section for Smaller Devices */
-      @media (max-width: 576px) {
-        .plants-grid {
-          grid-template-columns: repeat(2, 1fr); 
-          gap: 15px; 
-        }
-        
-        .plant-card {
-          height: auto; 
-        }
-        
-        .plant-img {
-          height: 250px; 
+        .nav-menu {
+          display: none;
         }
 
-        .footer-grid {
-          grid-template-columns: 1fr;
+        .mobile-cart {
+          display: block;
+        }
+
+        .banner .container {
+          flex-direction: column;
+        }
+
+        .banner-image {
+          order: -1;
+          margin-bottom: 40px;
+        }
+
+        .banner-content {
+          padding-right: 0;
           text-align: center;
         }
 
-        .footer-links h3:after {
-          left: 50%;
-          transform: translateX(-50%);
+        .banner-image img {
+          height: 300px;
+        }
+
+        .plants-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .plants-lover .container {
+          flex-direction: column;
+        }
+
+        .lover-content {
+          padding-left: 0;
+          margin-top: 40px;
+        }
+
+        /* NEW DEALS RESPONSIVE */
+        .deals-grid {
+          grid-template-columns: 1fr;
+          height: auto;
+        }
+
+        .left-grid {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto;
+        }
+
+        .deal-card {
+          height: 200px;
+        }
+
+        /* Footer responsive */
+        .footer-container {
+          flex-direction: column;
+          gap: 30px;
+        }
+        .footer-left, .footer-links, .footer-social {
+          flex: 1 1 100%;
+        }
+        .footer-links {
+          text-align: center;
+        }
+        .footer-logo {
+          justify-content: center;
+        }
+        .footer-description {
+          text-align: center;
+        }
+        .footer-social {
+          justify-content: center;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .plants-grid {
+          grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+          gap: 15px; /* Reduced gap for better spacing */
+        }
+        
+        .plant-card {
+          height: auto; /* Allow cards to adjust height */
+        }
+        
+        .plant-img {
+          height: 250px; /* Adjusted height for mobile */
         }
 
         .subscribe-form {
@@ -677,11 +719,7 @@
           border-radius: 30px;
         }
 
-        /* new deals */
+        /* NEW DEALS RESPONSIVE */
         .left-grid {
           grid-template-columns: 1fr;
         }
-      }
-
-
-
