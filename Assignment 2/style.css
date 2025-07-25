@@ -577,3 +577,23 @@
       }
 
 
+            /* Alert Section for Cart*/
+      .alert {
+        position: fixed;
+        top: 100px;
+        right: 30px;
+        background: var(--primary);
+        color: var(--white);
+        padding: 15px 25px;
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+        transform: translateX(200%);
+        transition: transform 0.5s ease;
+        z-index: 2000;
+      }
+
+      .alert.show {
+        transform: translateX(0);
+      }
+
+
