@@ -218,3 +218,54 @@
       }
 
 
+
+
+       /* Main content section */
+
+          /* Plants For Sale Section */
+      .plants-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+      }
+
+      .plant-card {
+        background: var(--white);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: var(--transition);
+      }
+
+      .plant-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      .plant-img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .plant-info {
+        padding: 20px;
+        text-align: center;
+      }
+
+      .plant-info h3 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        color: var(--dark);
+      }
+
+      .plant-price {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 15px;
+      }
+
+
